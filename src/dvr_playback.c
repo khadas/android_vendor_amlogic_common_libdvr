@@ -89,6 +89,384 @@ static char* _cmd_toString(int cmd)
 }
 
 
+
+
+am_tsplayer_result  AmTsPlayer_create(am_tsplayer_init_params Params, am_tsplayer_handle *pHadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getVersion(uint32_t *versionM,
+                                          uint32_t *VersionL){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getInstansNo(am_tsplayer_handle Hadl, uint32_t *Numb){
+
+return AM_TSPLAYER_OK;
+
+}
+
+
+am_tsplayer_result  AmTsPlayer_getSyncInstansNo(am_tsplayer_handle Hadl,
+                                                                      int32_t *Numb){
+
+return AM_TSPLAYER_OK;
+
+}
+
+
+am_tsplayer_result  AmTsPlayer_registerCb(am_tsplayer_handle Hadl, event_callback pfunc, void *param){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getCb(am_tsplayer_handle Hadl, event_callback *pfunc, void* *ppParam){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_release(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_writeFrameData(am_tsplayer_handle Hadl,
+                                                   am_tsplayer_input_frame_buffer *buf,
+                                                   uint64_t timeout_ms){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_writeData(am_tsplayer_handle Hadl, am_tsplayer_input_buffer *buf, uint64_t timeout_ms){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setWorkMode (am_tsplayer_handle Hadl, am_tsplayer_work_mode mode){
+
+return AM_TSPLAYER_OK;
+
+}
+
+
+am_tsplayer_result  AmTsPlayer_getCurrentTime(am_tsplayer_handle Hadl, int64_t *time){
+
+return AM_TSPLAYER_OK;
+
+}
+
+
+am_tsplayer_result  AmTsPlayer_getPts(am_tsplayer_handle Hadl, am_tsplayer_stream_type StrType, uint64_t *pts){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setSyncMode(am_tsplayer_handle Hadl, am_tsplayer_avsync_mode mode ){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getSyncMode(am_tsplayer_handle Hadl, am_tsplayer_avsync_mode *mode ){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setPcrPid(am_tsplayer_handle Hadl, uint32_t pid){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getDelayTime(am_tsplayer_handle Hadl, int64_t *time){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_startFast(am_tsplayer_handle Hadl, float scale){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_stopFast(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setTrickMode(am_tsplayer_handle Hadl, am_tsplayer_video_trick_mode trickmode){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getBufferStat(am_tsplayer_handle Hadl, am_tsplayer_stream_type StrType,
+                                                            am_tsplayer_buffer_stat *pBufStat){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setVideoWindow(am_tsplayer_handle Hadl,
+                                                            int32_t x,int32_t y,
+                                                            int32_t width,int32_t height){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setSurface(am_tsplayer_handle Hadl, void* pSurface){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_showVideo(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_hideVideo(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setVideoMatchMode(am_tsplayer_handle Hadl, am_tsplayer_video_match_mode MathMod){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setVideoParams(am_tsplayer_handle Hadl, am_tsplayer_video_params *pParams){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setVideoBlackOut(am_tsplayer_handle Hadl, bool_t blackout){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getVideoInfo(am_tsplayer_handle Hadl, am_tsplayer_video_info *pInfo){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getVideoStat(am_tsplayer_handle Hadl, am_tsplayer_vdec_stat *pStat){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_startVideoDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_pauseVideoDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_resumeVideoDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_stopVideoDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setAudioVolume(am_tsplayer_handle Hadl, int32_t volume){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getAudioVolume(am_tsplayer_handle Hadl, int32_t *volume){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setAudioStereoMode(am_tsplayer_handle Hadl, am_tsplayer_audio_stereo_mode Mode){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getAudioStereoMode(am_tsplayer_handle Hadl, am_tsplayer_audio_stereo_mode *pMode){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setAudioMute(am_tsplayer_handle Hadl, bool_t analog_mute, bool_t digital_mute){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getAudioMute(am_tsplayer_handle Hadl, bool_t *analog_unmute, bool_t *digital_unmute){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setAudioParams(am_tsplayer_handle Hadl, am_tsplayer_audio_params *pParams){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setAudioOutMode(am_tsplayer_handle Hadl, am_tsplayer_audio_out_mode Mode){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getAudioInfo(am_tsplayer_handle Hadl,  am_tsplayer_audio_info *pInfo){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getAudioStat(am_tsplayer_handle Hadl, am_tsplayer_adec_stat *pStat){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_startAudioDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_pauseAudioDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_resumeAudioDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_stopAudioDecoding(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setADParams(am_tsplayer_handle Hadl, am_tsplayer_audio_params *pParams){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setADMixLevel(am_tsplayer_handle Hadl, int32_t master_vol, int32_t slave_vol){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getADMixLevel(am_tsplayer_handle Hadl, int32_t *master_vol, int32_t *slave_vol){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_enableADMix(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_disableADMix(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getADInfo(am_tsplayer_handle Hadl, am_tsplayer_audio_info *pInfo){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getADStat(am_tsplayer_handle Hadl, am_tsplayer_adec_stat *pStat){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setSubPid(am_tsplayer_handle Hadl, uint32_t pid){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_getParams(am_tsplayer_handle Hadl,am_tsplayer_parameter type, void* arg){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_setParams(am_tsplayer_handle Hadl,am_tsplayer_parameter type, void* arg){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result AmTsPlayer_getState(am_tsplayer_handle Hadl,am_tsplayer_state_t* state){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_startSub(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+am_tsplayer_result  AmTsPlayer_stopSub(am_tsplayer_handle Hadl){
+
+return AM_TSPLAYER_OK;
+
+}
+
+
+
+
+
+
 static char* _dvr_playback_state_toString(int stat)
 {
   char *string[DVR_PLAYBACK_STATE_FB+1]={
