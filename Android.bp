@@ -45,7 +45,7 @@ cc_library_shared {
         "libdl",
         "libc",
         "liblog",
-       // "libmediahal_tsplayer",
+        "libmediahal_tsplayer",
     ],
     cflags: [
 
@@ -111,7 +111,7 @@ cc_library_shared {
         "libdl",
         "libc",
         "liblog",
-      //  "libmediahal_tsplayer.system",
+        "libmediahal_tsplayer.system",
     ],
     cflags: [
 
